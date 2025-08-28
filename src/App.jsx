@@ -26,24 +26,34 @@ function App() {
   }
 
   const skills = {
-    'Languages': ['Python', 'SQL', 'Java', 'JavaScript', 'Dart', 'C++'],
-    'Frameworks': ['Scikit-learn', 'Pandas', 'PySpark', 'TensorFlow', 'Keras', 'Django', 'Flask', 'Node.js', 'LAMP'],
-    'Tools': ['Azure Data Factory', 'Data Bricks', 'Azure Datalake', 'Automation Anywhere', 'UI Path', 'Power BI', 'Git', 'Firebase', 'PostgreSQL', 'MySQL', 'SQLite'],
-    'Platforms': ['Windows', 'Linux', 'Web', 'Raspberry Pi', 'Arduino', 'AWS', 'GCP', 'Azure', 'Alibaba Cloud', 'IBM Cloud']
+    'Programming Languages': ['Python', 'R', 'SQL', 'Java', 'C++'],
+    'Web Technologies': ['HTML', 'CSS', 'JavaScript', 'React', 'Flask'],
+    'Databases': ['Microsoft SQL Server', 'MySQL', 'PostgreSQL', 'MongoDB', 'Neo4j'],
+    'Data Engineering Tools': ['SSIS', 'Talend', 'Airflow', 'Kafka', 'Spark', 'Databricks', 'Power BI', 'Tableau'],
+    'Cloud Technologies': ['AWS', 'Azure', 'GCP'],
+    'Machine Learning': ['TensorFlow', 'PyTorch', 'Scikit-learn', 'NLTK', 'Spacy', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn'],
+    'Other Tools': ['Git', 'Docker', 'Jira', 'MS Visio', 'MS Excel', 'PowerPoint']
   }
 
   const projects = [
     {
-      title: 'AI-Based Recommendation System and Calorie Counter',
-      description: 'Developed a mobile app that recommends recipes based on available ingredients and tracks calorie intake to support healthier eating.',
-      technologies: ['ML', 'Nutrition', 'Flutter', 'Firebase', 'Python'],
+      title: 'AI-Powered Resume Parser',
+      description: 'Developed an AI-powered resume parser using NLP techniques to extract key information from resumes, reducing manual screening time by 30%.',
+      technologies: ['Python', 'NLTK', 'SpaCy', 'scikit-learn', 'Flask', 'AWS S3'],
       github: '#',
       demo: '#'
     },
     {
-      title: 'Python-based Vaccine Slot Finder',
-      description: 'Created a console tool to help users locate real-time COVID-19 vaccine slots using CoWIN API, aiding dozens during peak demand.',
-      technologies: ['API', 'Automation', 'Python', 'REST API'],
+      title: 'Real-time Fraud Detection System',
+      description: 'Designed and implemented a real-time fraud detection system using Apache Kafka and Spark Streaming, processing over 1M transactions/hour.',
+      technologies: ['Python', 'Kafka', 'Spark', 'Cassandra', 'AWS Kinesis'],
+      github: '#',
+      demo: '#'
+    },
+    {
+      title: 'Customer Churn Prediction Model',
+      description: 'Built a machine learning model to predict customer churn, improving retention rates by 15% through targeted interventions.',
+      technologies: ['Python', 'TensorFlow', 'scikit-learn', 'Pandas', 'AWS SageMaker'],
       github: '#',
       demo: '#'
     }
@@ -80,7 +90,7 @@ function App() {
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 p-1">
               <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
-                <span className="text-4xl font-bold">YN</span>
+                <span className="text-4xl font-bold">DT</span>
               </div>
             </div>
           </div>
@@ -124,7 +134,7 @@ function App() {
             <Card className="bg-slate-800/50 border-slate-700">
               <CardContent className="p-8">
                 <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                  I\'m Dhruv Thaker, a passionate Data Engineer and AI/ML Specialist with expertise in building scalable data pipelines, 
+                  I'm Dhruv Thaker, a passionate Data Engineer and AI/ML Specialist with expertise in building scalable data pipelines, 
                   implementing machine learning solutions, and transforming complex data into actionable business insights. I hold a Masters of Science in Information Management from the University of Illinois Urbana-Champaign.
                 </p>
                 <p className="text-lg text-gray-300 leading-relaxed mb-6">
@@ -217,6 +227,44 @@ function App() {
         </div>
       </section>
 
+      {/* Experience Section */}
+      <section id="experience" className="py-20">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            Work Experience
+          </h2>
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-slate-800/50 border-slate-700 mb-8">
+              <CardHeader>
+                <CardTitle className="text-xl text-blue-400">Data & Analytics Associate</CardTitle>
+                <CardDescription className="text-gray-300">PwC | Dallas, TX</CardDescription>
+                <CardDescription className="text-gray-400">August 2023 - July 2025</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="list-disc list-inside text-gray-300">
+                  <li>Engineered and maintained robust data pipelines using SSIS, Talend, and SQL, ensuring 99.9% data availability and accuracy.</li>
+                  <li>Automated manual processes using RPA and AI-powered OCR, reducing processing time by 40% and improving data quality.</li>
+                  <li>Developed interactive dashboards with Power BI and Tableau, providing actionable insights to stakeholders.</li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="bg-slate-800/50 border-slate-700">
+              <CardHeader>
+                <CardTitle className="text-xl text-blue-400">Data Science Intern</CardTitle>
+                <CardDescription className="text-gray-300">Synergy AI | Remote</CardDescription>
+                <CardDescription className="text-gray-400">June 2022 - August 2022</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="list-disc list-inside text-gray-300">
+                  <li>Developed an NLP-based model to extract information from legal documents, achieving 92% accuracy.</li>
+                  <li>Built a customer churn prediction model using machine learning, resulting in a 15% improvement in customer retention.</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Resume Section */}
       <section id="resume" className="py-20">
         <div className="container mx-auto px-6">
@@ -284,7 +332,7 @@ function App() {
       <footer className="py-8 border-t border-slate-700">
         <div className="container mx-auto px-6 text-center">
           <p className="text-gray-400">
-            © 2024 Your Name. Built with React and Tailwind CSS.
+            © 2024 Dhruv Thaker. Built with React and Tailwind CSS.
           </p>
         </div>
       </footer>
