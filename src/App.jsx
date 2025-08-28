@@ -26,30 +26,24 @@ function App() {
   }
 
   const skills = {
-    'Data Engineering': ['Python', 'Apache Spark', 'Kafka', 'Airflow', 'SQL', 'PostgreSQL', 'MongoDB', 'Docker', 'Kubernetes'],
-    'AI/ML': ['TensorFlow', 'PyTorch', 'Scikit-learn', 'Pandas', 'NumPy', 'MLflow', 'Jupyter', 'OpenAI API'],
-    'Cloud & DevOps': ['AWS', 'Azure', 'GCP', 'Terraform', 'Jenkins', 'Git', 'Linux', 'Bash']
+    'Languages': ['Python', 'SQL', 'Java', 'JavaScript', 'Dart', 'C++'],
+    'Frameworks': ['Scikit-learn', 'Pandas', 'PySpark', 'TensorFlow', 'Keras', 'Django', 'Flask', 'Node.js', 'LAMP'],
+    'Tools': ['Azure Data Factory', 'Data Bricks', 'Azure Datalake', 'Automation Anywhere', 'UI Path', 'Power BI', 'Git', 'Firebase', 'PostgreSQL', 'MySQL', 'SQLite'],
+    'Platforms': ['Windows', 'Linux', 'Web', 'Raspberry Pi', 'Arduino', 'AWS', 'GCP', 'Azure', 'Alibaba Cloud', 'IBM Cloud']
   }
 
   const projects = [
     {
-      title: 'Real-time Data Pipeline',
-      description: 'Built a scalable real-time data pipeline using Apache Kafka and Spark Streaming to process millions of events per day.',
-      technologies: ['Python', 'Kafka', 'Spark', 'AWS'],
+      title: 'AI-Based Recommendation System and Calorie Counter',
+      description: 'Developed a mobile app that recommends recipes based on available ingredients and tracks calorie intake to support healthier eating.',
+      technologies: ['ML', 'Nutrition', 'Flutter', 'Firebase', 'Python'],
       github: '#',
       demo: '#'
     },
     {
-      title: 'ML Model Deployment Platform',
-      description: 'Developed an end-to-end ML platform for model training, versioning, and deployment with automated CI/CD pipelines.',
-      technologies: ['Python', 'MLflow', 'Docker', 'Kubernetes'],
-      github: '#',
-      demo: '#'
-    },
-    {
-      title: 'Predictive Analytics Dashboard',
-      description: 'Created an interactive dashboard for predictive analytics using machine learning models and real-time data visualization.',
-      technologies: ['Python', 'TensorFlow', 'React', 'D3.js'],
+      title: 'Python-based Vaccine Slot Finder',
+      description: 'Created a console tool to help users locate real-time COVID-19 vaccine slots using CoWIN API, aiding dozens during peak demand.',
+      technologies: ['API', 'Automation', 'Python', 'REST API'],
       github: '#',
       demo: '#'
     }
@@ -91,7 +85,7 @@ function App() {
             </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-            Your Name
+            Dhruv Thaker
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Data Engineer & AI/ML Specialist
@@ -130,12 +124,13 @@ function App() {
             <Card className="bg-slate-800/50 border-slate-700">
               <CardContent className="p-8">
                 <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                  I'm a passionate Data Engineer and AI/ML Specialist with expertise in building scalable data pipelines, 
-                  implementing machine learning solutions, and transforming complex data into actionable business insights.
+                  I\'m Dhruv Thaker, a passionate Data Engineer and AI/ML Specialist with expertise in building scalable data pipelines, 
+                  implementing machine learning solutions, and transforming complex data into actionable business insights. I hold a Masters of Science in Information Management from the University of Illinois Urbana-Champaign.
                 </p>
                 <p className="text-lg text-gray-300 leading-relaxed mb-6">
                   With a strong background in distributed systems, cloud technologies, and modern ML frameworks, 
-                  I help organizations leverage their data to drive innovation and growth.
+                  I help organizations leverage their data to drive innovation and growth. My experience includes developing end-to-end data pipelines, 
+                  automating processes with RPA and AI-powered OCR, and optimizing data quality and integration.
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center">
                   <div className="flex items-center gap-2 text-blue-400">
@@ -257,19 +252,28 @@ function App() {
                   I'm always interested in new opportunities and collaborations. Let's connect!
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                  <Button variant="outline" className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white">
-                    <Mail className="w-5 h-5 mr-2" />
-                    Email Me
-                  </Button>
-                  <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
-                    <Linkedin className="w-5 h-5 mr-2" />
-                    LinkedIn
-                  </Button>
-                  <Button variant="outline" className="border-gray-400 text-gray-400 hover:bg-gray-400 hover:text-white">
-                    <Github className="w-5 h-5 mr-2" />
-                    GitHub
-                  </Button>
+                  <a href="mailto:dthaker3@illinois.edu" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white">
+                      <Mail className="w-5 h-5 mr-2" />
+                      Email Me
+                    </Button>
+                  </a>
+                  <a href="https://linkedin.com/in/dhruv-thaker" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
+                      <Linkedin className="w-5 h-5 mr-2" />
+                      LinkedIn
+                    </Button>
+                  </a>
+                  <a href="https://github.com/dthaker7/portfolio-website" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-gray-400 text-gray-400 hover:bg-gray-400 hover:text-white">
+                      <Github className="w-5 h-5 mr-2" />
+                      GitHub
+                    </Button>
+                  </a>
                 </div>
+                <p className="text-lg text-gray-300 text-center mt-8">
+                  Mobile: +1 (217) 979-4321
+                </p>
               </CardContent>
             </Card>
           </div>
@@ -289,4 +293,5 @@ function App() {
 }
 
 export default App
+
 
